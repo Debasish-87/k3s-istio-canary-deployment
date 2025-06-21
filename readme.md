@@ -194,7 +194,6 @@ kubectl port-forward svc/kiali -n istio-system 20001:20001
 | Tool           | URL                                              |
 | -------------- | ------------------------------------------------ |
 | **Kiali**      | [http://localhost:20001](http://localhost:20001) |
-| **Jaeger**     | [http://localhost:16686](http://localhost:16686) |
 | **Grafana**    | [http://localhost:3000](http://localhost:3000)   |
 | **Prometheus** | [http://localhost:9090](http://localhost:9090)   |
 
@@ -245,7 +244,8 @@ spec:
 ```
 
 📸 Screenshot from Kiali (100% Success Rate):
-![v1-80-v2-20](screenshots/kiali-success-v1-80-v2-20.png)
+
+![Screenshot from 2025-06-22 05-11-30](https://github.com/user-attachments/assets/6e9cbf1a-31b9-4f88-8d24-03d8fe43d1aa)
 
 ---
 
@@ -274,7 +274,25 @@ spec:
 ```
 
 📸 Screenshot from Kiali (Again, 100% Success Rate):
+
 ![v1-20-v2-80](screenshots/kiali-success-v1-20-v2-80.png)
+
+
+📸 Screenshot from Prometheous 
+
+![Screenshot from 2025-06-22 05-09-05](https://github.com/user-attachments/assets/5b6c330d-889b-4c05-9177-e8dc3a7478ba)
+
+📸 Screenshot from Grafana Dashboard 
+
+![Screenshot from 2025-06-22 05-09-26](https://github.com/user-attachments/assets/e417ca17-2ef5-4d58-a5de-4e1cfd9e591d)
+
+![Screenshot from 2025-06-22 05-10-13](https://github.com/user-attachments/assets/51cfc731-c1cf-4271-a1e4-290bd3d748a6)
+
+![Screenshot from 2025-06-22 05-10-30](https://github.com/user-attachments/assets/5580008e-f2e8-4b30-bcd4-d5885989e7ab)
+
+![Screenshot from 2025-06-22 05-10-46](https://github.com/user-attachments/assets/9e1ca745-e67f-4735-babd-4e66e4683452)
+
+![Screenshot from 2025-06-22 05-11-09](https://github.com/user-attachments/assets/d7628bae-4584-4a7f-8d6b-67c5e22b3ff3)
 
 ---
 
