@@ -31,7 +31,7 @@ k3s-istio-canary-deployment/
 ├── setup.sh                     # Automated setup script (optional)
 └── readme.md                    # 📘 This file
 
-````
+```
 
 ---
 
@@ -65,7 +65,7 @@ Using **Istio VirtualService**, you can split traffic like:
     host: my-app
     subset: v2
   weight: 20
-````
+```
 
 ---
 
@@ -147,7 +147,7 @@ You should see a response from either `v1` or `v2`, based on the configured weig
 
 ---
 
-## 🧠 Canary Strategy
+## 🧐 Canary Strategy
 
 A **Canary Deployment** sends a small % of user traffic to a new version (`v2`) to monitor behavior before full rollout.
 
@@ -213,7 +213,6 @@ Welcome to App Version v2
 Run this multiple times to observe traffic switching!
 
 ---
-
 
 ### 🎯 Canary Traffic Split Verification via VirtualService
 
@@ -295,9 +294,8 @@ No matter how traffic was split between stable (`v1`) and canary (`v2`), **Istio
 
 ## 👨‍💻 Author
 
-**Debasish Mohanty**
-DevSecOps | Kubernetes | SRE | Cloud Security
+**Debasish Mohanty**  
+DevSecOps | Kubernetes | SRE | Cloud Security  
 [GitHub](https://github.com/Debasish-87) • [LinkedIn](https://linkedin.com/in/debasish8787)
 
 ---
-
