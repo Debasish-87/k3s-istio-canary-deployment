@@ -291,7 +291,7 @@ spec:
 
 ![68a5c428-a36c-4786-99da-487905ec89bd](https://github.com/user-attachments/assets/ac9aab66-ea65-4e23-814b-b57de0110a34)
 
-#### 📸 Screenshot from Prometheous 
+#### 📸 Screenshot from Prometheus
 
 ![Screenshot from 2025-06-22 05-09-05](https://github.com/user-attachments/assets/5b6c330d-889b-4c05-9177-e8dc3a7478ba)
 
