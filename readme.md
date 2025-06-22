@@ -1,5 +1,19 @@
 # 🚀 k3s-istio-canary-deployment
 
+![K3s](https://img.shields.io/badge/K3s-Lightweight%20Kubernetes-brightgreen)
+![Istio](https://img.shields.io/badge/Istio-Service%20Mesh-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerization-blue)
+![Node.js](https://img.shields.io/badge/Node.js-JavaScript%20Runtime-green)
+![kubectl](https://img.shields.io/badge/kubectl-Kubernetes%20CLI-lightgrey)
+![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black)
+![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-orange)
+![Grafana](https://img.shields.io/badge/Grafana-Visualization-yellow)
+![Kiali](https://img.shields.io/badge/Kiali-Service%20Mesh%20Observability-purple)
+![Jaeger](https://img.shields.io/badge/Jaeger-Distributed%20Tracing-orange)
+![Canary](https://img.shields.io/badge/Canary-Deployment%20Strategy-red)
+![DevSecOps](https://img.shields.io/badge/DevSecOps-Secure%20CI%2FCD-critical)
+![Bash](https://img.shields.io/badge/Bash-Scripting-darkgreen)
+
 A **Cloud-Native Microservices Deployment Demo** using lightweight Kubernetes with **K3s**, integrated with **Istio Service Mesh** for intelligent traffic management and **Canary Deployment**. This project features two versions of a Dockerized Node.js app (`v1` and `v2`) with controlled traffic routing using Istio.
 
 ---
@@ -31,7 +45,7 @@ k3s-istio-canary-deployment/
 ├── setup.sh                     # Automated setup script (optional)
 └── readme.md                    # 📘 This file
 
-````
+```
 
 ---
 
@@ -65,7 +79,7 @@ Using **Istio VirtualService**, you can split traffic like:
     host: my-app
     subset: v2
   weight: 20
-````
+```
 
 ---
 
@@ -147,7 +161,7 @@ You should see a response from either `v1` or `v2`, based on the configured weig
 
 ---
 
-## 🧠 Canary Strategy
+## 🧐 Canary Strategy
 
 A **Canary Deployment** sends a small % of user traffic to a new version (`v2`) to monitor behavior before full rollout.
 
@@ -194,7 +208,6 @@ kubectl port-forward svc/kiali -n istio-system 20001:20001
 | Tool           | URL                                              |
 | -------------- | ------------------------------------------------ |
 | **Kiali**      | [http://localhost:20001](http://localhost:20001) |
-| **Jaeger**     | [http://localhost:16686](http://localhost:16686) |
 | **Grafana**    | [http://localhost:3000](http://localhost:3000)   |
 | **Prometheus** | [http://localhost:9090](http://localhost:9090)   |
 
@@ -214,14 +227,13 @@ Run this multiple times to observe traffic switching!
 
 ---
 
-
 ### 🎯 Canary Traffic Split Verification via VirtualService
 
 We tested Istio Canary deployment by adjusting traffic weights between `v1` and `v2` using **VirtualService** and observed the success rate using **Kiali Dashboard**.
 
 ---
 
-#### ✅ Case 1: `v1` = 80%, `v2` = 20%
+### ✅ Case 1: `v1` = 80%, `v2` = 20%
 
 ```yaml
 apiVersion: networking.istio.io/v1beta1
@@ -245,12 +257,13 @@ spec:
           weight: 20
 ```
 
-📸 Screenshot from Kiali (100% Success Rate):
-![v1-80-v2-20](screenshots/kiali-success-v1-80-v2-20.png)
+#### 📸 Screenshot from Kiali (100% Success Rate):
+
+![Screenshot from 2025-06-22 05-11-30](https://github.com/user-attachments/assets/6e9cbf1a-31b9-4f88-8d24-03d8fe43d1aa)
 
 ---
 
-#### ✅ Case 2: `v1` = 20%, `v2` = 80%
+### ✅ Case 2: `v1` = 20%, `v2` = 80%
 
 ```yaml
 apiVersion: networking.istio.io/v1beta1
@@ -274,8 +287,25 @@ spec:
           weight: 80
 ```
 
-📸 Screenshot from Kiali (Again, 100% Success Rate):
-![v1-20-v2-80](screenshots/kiali-success-v1-20-v2-80.png)
+#### 📸 Screenshot from Kiali (Again, 100% Success Rate):
+
+![68a5c428-a36c-4786-99da-487905ec89bd](https://github.com/user-attachments/assets/ac9aab66-ea65-4e23-814b-b57de0110a34)
+
+#### 📸 Screenshot from Prometheus
+
+![Screenshot from 2025-06-22 05-09-05](https://github.com/user-attachments/assets/5b6c330d-889b-4c05-9177-e8dc3a7478ba)
+
+#### 📸 Screenshot from Grafana Dashboard 
+
+![Screenshot from 2025-06-22 05-09-26](https://github.com/user-attachments/assets/e417ca17-2ef5-4d58-a5de-4e1cfd9e591d)
+
+![Screenshot from 2025-06-22 05-10-13](https://github.com/user-attachments/assets/51cfc731-c1cf-4271-a1e4-290bd3d748a6)
+
+![Screenshot from 2025-06-22 05-10-30](https://github.com/user-attachments/assets/5580008e-f2e8-4b30-bcd4-d5885989e7ab)
+
+![Screenshot from 2025-06-22 05-10-46](https://github.com/user-attachments/assets/9e1ca745-e67f-4735-babd-4e66e4683452)
+
+![Screenshot from 2025-06-22 05-11-09](https://github.com/user-attachments/assets/d7628bae-4584-4a7f-8d6b-67c5e22b3ff3)
 
 ---
 
@@ -295,9 +325,8 @@ No matter how traffic was split between stable (`v1`) and canary (`v2`), **Istio
 
 ## 👨‍💻 Author
 
-**Debasish Mohanty**
-DevSecOps | Kubernetes | SRE | Cloud Security
+**Debasish Mohanty**  
+DevSecOps | Kubernetes | SRE | Cloud Security  
 [GitHub](https://github.com/Debasish-87) • [LinkedIn](https://linkedin.com/in/debasish8787)
 
 ---
-
