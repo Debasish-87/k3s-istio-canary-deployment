@@ -219,7 +219,7 @@ We tested Istio Canary deployment by adjusting traffic weights between `v1` and 
 
 ---
 
-#### ✅ Case 1: `v1` = 80%, `v2` = 20%
+### ✅ Case 1: `v1` = 80%, `v2` = 20%
 
 ```yaml
 apiVersion: networking.istio.io/v1beta1
@@ -243,13 +243,13 @@ spec:
           weight: 20
 ```
 
-📸 Screenshot from Kiali (100% Success Rate):
+#### 📸 Screenshot from Kiali (100% Success Rate):
 
 ![Screenshot from 2025-06-22 05-11-30](https://github.com/user-attachments/assets/6e9cbf1a-31b9-4f88-8d24-03d8fe43d1aa)
 
 ---
 
-#### ✅ Case 2: `v1` = 20%, `v2` = 80%
+### ✅ Case 2: `v1` = 20%, `v2` = 80%
 
 ```yaml
 apiVersion: networking.istio.io/v1beta1
@@ -273,16 +273,15 @@ spec:
           weight: 80
 ```
 
-📸 Screenshot from Kiali (Again, 100% Success Rate):
+#### 📸 Screenshot from Kiali (Again, 100% Success Rate):
 
-![v1-20-v2-80](screenshots/kiali-success-v1-20-v2-80.png)
+![68a5c428-a36c-4786-99da-487905ec89bd](https://github.com/user-attachments/assets/ac9aab66-ea65-4e23-814b-b57de0110a34)
 
-
-📸 Screenshot from Prometheous 
+#### 📸 Screenshot from Prometheous 
 
 ![Screenshot from 2025-06-22 05-09-05](https://github.com/user-attachments/assets/5b6c330d-889b-4c05-9177-e8dc3a7478ba)
 
-📸 Screenshot from Grafana Dashboard 
+#### 📸 Screenshot from Grafana Dashboard 
 
 ![Screenshot from 2025-06-22 05-09-26](https://github.com/user-attachments/assets/e417ca17-2ef5-4d58-a5de-4e1cfd9e591d)
 
