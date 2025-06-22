@@ -1,5 +1,19 @@
 # 🚀 k3s-istio-canary-deployment
 
+![K3s](https://img.shields.io/badge/K3s-Lightweight%20Kubernetes-brightgreen)
+![Istio](https://img.shields.io/badge/Istio-Service%20Mesh-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerization-blue)
+![Node.js](https://img.shields.io/badge/Node.js-JavaScript%20Runtime-green)
+![kubectl](https://img.shields.io/badge/kubectl-Kubernetes%20CLI-lightgrey)
+![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black)
+![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-orange)
+![Grafana](https://img.shields.io/badge/Grafana-Visualization-yellow)
+![Kiali](https://img.shields.io/badge/Kiali-Service%20Mesh%20Observability-purple)
+![Jaeger](https://img.shields.io/badge/Jaeger-Distributed%20Tracing-orange)
+![Canary](https://img.shields.io/badge/Canary-Deployment%20Strategy-red)
+![DevSecOps](https://img.shields.io/badge/DevSecOps-Secure%20CI%2FCD-critical)
+![Bash](https://img.shields.io/badge/Bash-Scripting-darkgreen)
+
 A **Cloud-Native Microservices Deployment Demo** using lightweight Kubernetes with **K3s**, integrated with **Istio Service Mesh** for intelligent traffic management and **Canary Deployment**. This project features two versions of a Dockerized Node.js app (`v1` and `v2`) with controlled traffic routing using Istio.
 
 ---
