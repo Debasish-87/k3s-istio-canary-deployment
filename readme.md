@@ -321,6 +321,7 @@ No matter how traffic was split between stable (`v1`) and canary (`v2`), **Istio
 * [K3s Docs](https://docs.k3s.io/)
 * [Canary Deployments](https://learn.microsoft.com/en-us/devops/deliver/what-is-canary-deployment)
 
+
 ---
 
 ## 👨‍💻 Author
