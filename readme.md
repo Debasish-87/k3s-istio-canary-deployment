@@ -1,4 +1,4 @@
-# 🚀 k3s-istio-canary-deployment
+# k3s-istio-canary-deployment
 
 ![K3s](https://img.shields.io/badge/K3s-Lightweight%20Kubernetes-brightgreen)
 ![Istio](https://img.shields.io/badge/Istio-Service%20Mesh-blue)
